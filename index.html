@@ -8,86 +8,117 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f4f8;
             color: #333;
         }
 
+        /* Header */
         header {
-            background: #0d47a1;
+            background: linear-gradient(135deg, #0052cc, #007bff);
             color: white;
-            padding: 20px 40px;
             text-align: center;
+            padding: 60px 20px;
         }
 
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
         nav {
-            background: #1565c0;
-            padding: 10px;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
+            color: #0052cc;
             margin: 0 20px;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #007bff;
         }
 
+        /* Hero Section */
         .hero {
             padding: 80px 20px;
             text-align: center;
-            background: white;
         }
 
-        .hero h1 {
-            font-size: 40px;
-            color: #0d47a1;
-            margin-bottom: 20px;
+        .hero h2 {
+            font-size: 42px;
+            color: #0052cc;
         }
 
         .hero p {
             font-size: 20px;
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
-            line-height: 1.6;
+            opacity: 0.8;
         }
 
-        .section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            max-width: 900px;
+        /* Card Sections */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: 0.3s;
         }
 
-        .section h2 {
-            color: #0d47a1;
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
 
+        .card h3 {
+            color: #0052cc;
+        }
+
+        /* Footer */
         footer {
-            background: #0d47a1;
-            color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            background: #0052cc;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
         }
-
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Sughainfotech</h1>
-        <p>Managed IT Services | IT Infrastructure | Support Solutions</p>
+        <p>Modern IT Infrastructure • Managed Services • 24/7 Support</p>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -95,36 +126,21 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Hero -->
     <div class="hero">
-        <h1>Reliable Managed IT Services for Your Business</h1>
+        <h2>Empowering Your Business with Smart IT Solutions</h2>
         <p>
-            We deliver end-to-end IT support, infrastructure management, and
-            24/7 monitoring to ensure your business runs smoothly.
+            We deliver reliable, modern, and scalable IT services designed to help 
+            your business grow with confidence and security in this digital era.
         </p>
     </div>
 
-    <div class="section">
-        <h2>Our Services</h2>
-        <ul>
-            <li>✔ IT Infrastructure Management</li>
-            <li>✔ Network Monitoring & Security</li>
-            <li>✔ Helpdesk & Ticketing Support</li>
-            <li>✔ Cloud & Backup Solutions</li>
-            <li>✔ Remote & On-Site Support</li>
-        </ul>
-    </div>
+    <!-- Cards -->
+    <div class="container">
+        <div class="card">
+            <h3>🔧 Managed IT Services</h3>
+            <p>End-to-end monitoring, support, and proactive IT management for your business.</p>
+        </div>
 
-    <div class="section">
-        <h2>Why Choose Us?</h2>
-        <p>
-            With professional experience and commitment, we provide dependable 
-            IT solutions that help businesses stay secure, stable, and efficient.
-        </p>
-    </div>
-
-    <footer>
-        © 2025 Sughainfotech - All Rights Reserved
-    </footer>
-
-</body>
-</html>
+        <div class="card">
+            <h3>🔐 Netwo
