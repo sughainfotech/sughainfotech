@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sugha Infotech</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Sughainfotech</title>
+
     <style>
         body {
-            background: #f7f7f7;
-            font-family: Arial, sans-serif;
-            padding: 40px;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f4f8;
         }
-        .container {
-            max-width: 600px;
-            background: white;
-            margin: auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-        h1 {
+
+        header {
+            background: linear-gradient(135deg, #0052cc, #007bff);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
         }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0052cc;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .form-container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
         input, textarea {
             width: 100%;
-            padding: 10px;
-            margin-top: 10px;
+            padding: 12px;
+            margin-top: 12px;
             border-radius: 8px;
-            border: 1px solid #aaa;
+            border: 1px solid #ccc;
         }
+
         button {
-            background: #0066ff;
-            padding: 12px 25px;
+            background: #0052cc;
             color: white;
+            padding: 14px 20px;
             border: none;
             border-radius: 8px;
+            font-size: 16px;
+            margin-top: 14px;
+            width: 100%;
             cursor: pointer;
-            margin-top: 15px;
         }
+
         button:hover {
-            background: #004bcc;
+            background: #007bff;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Contact Us</h1>
+<header>
+    <h1>Contact Us</h1>
+    <p>We are always here to support your business</p>
+</header>
 
-        <form action="https://formspree.io/f/xvgljdkw" method="POST">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-            <label>Your Name</label>
-            <input type="text" name="name" required>
+<div class="form-container">
+    <form action="https://formspree.io/f/xvgljdkw" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required />
 
-            <label>Your Email</label>
-            <input type="email" name="_replyto" required>
+        <label>Email</label>
+        <input type="email" name="email" required />
 
-            <label>Your Message</label>
-            <textarea name="message" rows="6" required></textarea>
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
 
-            <!-- Anti-spam field -->
-            <input type="text" name="_gotcha" style="display:none">
-
-            <!-- Redirect to thank-you page -->
-            <input type="hidden" name="_next" value="https://sughainfotech.github.io/sughainfotech/thankyou.html">
-
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
 
 </body>
 </html>
