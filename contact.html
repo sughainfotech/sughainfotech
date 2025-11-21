@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sugha Infotech</title>
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+        button {
+            background: #0066ff;
+            padding: 12px 25px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #004bcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form action="https://formspree.io/f/xvgljdkw" method="POST">
+
+            <label>Your Name</label>
+            <input type="text" name="name" required>
+
+            <label>Your Email</label>
+            <input type="email" name="_replyto" required>
+
+            <label>Your Message</label>
+            <textarea name="message" rows="6" required></textarea>
+
+            <!-- Anti-spam field -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <!-- Redirect to thank-you page -->
+            <input type="hidden" name="_next" value="https://sughainfotech.github.io/sughainfotech/thankyou.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
