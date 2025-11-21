@@ -10,7 +10,7 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);
 .container{max-width:980px;margin:24px auto;padding:18px}
 .site-header{background:var(--card);box-shadow:0 1px 4px rgba(20,20,40,.06);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-radius:8px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:1000px}
+.brand img{height:40px}
 .nav a{margin-left:14px;text-decoration:none;color:#111;font-weight:600}
 .hero{background:linear-gradient(90deg,#ffffff, #f0f7ff);padding:48px;border-radius:8px;margin-top:18px;text-align:center}
 .hero h1{font-size:32px;margin:0 0 8px}
