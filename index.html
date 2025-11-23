@@ -1,167 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sughainfotech - Managed IT Services</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f2f4f8;
-            color: #333;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #0052cc, #007bff);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 20px;
-            opacity: 0.9;
-        }
-
-        /* Navigation */
-        nav {
-            background: white;
-            padding: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #0052cc;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: #007bff;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 42px;
-            color: #0052cc;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 750px;
-            margin: auto;
-            opacity: 0.8;
-        }
-
-        /* Card Sections */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-        }
-
-        .card h3 {
-            color: #0052cc;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            background: #0052cc;
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sughainfotech — Managed IT & Digital Services</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.png">
 </head>
-
 <body>
+<header class="site-nav">
+<div class="nav-inner">
+<div class="brand"><img src="logo-wordmark.svg" alt="Sughainfotech logo" style="height:42px"></div>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
 
-    <!-- Header -->
-    <header>
-        <h1>Sughainfotech</h1>
-        <p>Modern IT Infrastructure • Managed Services • 24/7 Support</p>
-    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<section class="header-hero">
+<div class="container hero">
+<h1>Modern IT Solutions — Nature Inspired, Tech Driven</h1>
+<p>We provide managed IT, secure networking, cloud migration and digital services designed for small and medium businesses.</p>
+<p style="margin-top:18px"><a class="cta" href="contact.html">Get a free consultation</a></p>
+</div>
+</section>
 
-    <!-- Hero -->
-    <div class="hero">
-        <h2>Empowering Your Business with Smart IT Solutions</h2>
-        <p>
-            We deliver reliable, modern, and scalable IT services designed to help 
-            your business grow with confidence and security in this digital era.
-        </p>
-    </div>
 
-    <!-- Cards -->
-    <div class="container">
-        <div class="card">
-            <h3>🔧 Managed IT Services</h3>
-            <p>End-to-end monitoring, support, and proactive IT management for your business.</p>
-        </div>
+<main class="container">
+<section class="grid">
+<div class="card">
+<h3>Managed IT</h3>
+<p>24/7 monitoring, patching and remote support — reduce downtime and gain predictability.</p>
+</div>
+<div class="card">
+<h3>Network Security</h3>
+<p>Firewall, endpoint protection and regular vulnerability checks.</p>
+</div>
+<div class="card">
+<h3>Cloud & Backup</h3>
+<p>Secure backups, tested recovery plans and cost-effective cloud migrations.</p>
+</div>
+<div class="card">
+<h3>Digital Services</h3>
+<p>Web development, SEO basics and small-scale digital marketing to grow visibility.</p>
+</div>
+</section>
 
-        <div class="card">
-            <h3>🔐 Network Security</h3>
-            <p>Firewalls, endpoint protection, threat monitoring, and cyber security solutions.</p>
-        </div>
 
-        <div class="card">
-            <h3>☁️ Cloud & Backup</h3>
-            <p>Smart cloud migration, disaster recovery, and secure data backup solutions.</p>
-        </div>
+<section style="margin-top:30px" class="card">
+<h2>Why Sughainfotech</h2>
+<p>We combine modern technology with a mindful approach — delivering reliable IT services with a human-first mindset.</p>
+</section>
+</main>
 
-        <div class="card">
-            <h3>📞 Helpdesk Support</h3>
-            <p>Quick resolution, remote assistance, and dedicated IT helpdesk services.</p>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-        © 2025 Sughainfotech • Modern IT Solutions
-    </footer>
+<footer class="footer">
+© <span id="yr">2025</span> Sughainfotech • IT Solutions & Digital Services
+</footer>
 
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
 </body>
 </html>
