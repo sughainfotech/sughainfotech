@@ -1,111 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Services - Sughainfotech</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f2f4f8;
-        }
-
-        header {
-            background: linear-gradient(135deg, #0052cc, #007bff);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: white;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #0052cc;
-            margin: 0 20px;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-        }
-
-        h3 {
-            color: #0052cc;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – Sughainfotech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Our Services</h1>
-    <p>Smart IT Solutions for Modern Businesses</p>
+    <nav>
+        <div class="logo">Sughainfotech</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<section class="hero-sub">
+    <h1>Our Services</h1>
+    <p>Delivering dependable technology solutions with a nature-aligned approach.</p>
+</section>
 
-<div class="container">
-    <div class="card">
-        <h3>🔧 Managed IT Services</h3>
-        <p>Monitoring, maintenance, and proactive management of your entire IT setup.</p>
+<section class="content-section">
+
+    <div class="service-card">
+        <h2>🌿 IT Managed Services</h2>
+        <p>
+            Complete IT management for businesses — monitoring, maintenance, patching, 
+            endpoint protection, reporting, compliance, and SLA-driven support.
+        </p>
     </div>
 
-    <div class="card">
-        <h3>🖥️ IT Infrastructure Management</h3>
-        <p>Servers, networks, routers, switches, data centers — full infra support.</p>
+    <div class="service-card">
+        <h2>🖥 Web Design & Development</h2>
+        <p>
+            Clean, modern websites that load fast, look great, and reflect your brand identity.
+            HTML, CSS, JS, WordPress, SEO-friendly design.
+        </p>
     </div>
 
-    <div class="card">
-        <h3>🔐 Network Security</h3>
-        <p>Firewalls, VPN, endpoint protection, threat monitoring.</p>
+    <div class="service-card">
+        <h2>🔗 Networking & Infra Consulting</h2>
+        <p>
+            LAN/WAN Setup, WiFi solutions, Server & Firewall configuration, cloud migration, 
+            data security consulting, and performance optimization.
+        </p>
     </div>
 
-    <div class="card">
-        <h3>☁️ Cloud Solutions</h3>
-        <p>Cloud migration, backup solutions, disaster recovery.</p>
+    <div class="service-card">
+        <h2>📈 Digital Marketing</h2>
+        <p>
+            SEO, Social Media, Branding, Google Business Profile optimization, 
+            ad campaigns, and lead-generation strategies.
+        </p>
     </div>
 
-    <div class="card">
-        <h3>📞 Helpdesk & Remote Support</h3>
-        <p>Remote troubleshooting, quick fixes, 24/7 assistance.</p>
+    <div class="service-card">
+        <h2>🎓 Corporate & Individual Training</h2>
+        <p>
+            IT courses, cloud basics, cybersecurity awareness, digital tools training, 
+            and hands-on employee productivity enhancement sessions.
+        </p>
     </div>
 
-    <div class="card">
-        <h3>📡 WiFi & Network Setup</h3>
-        <p>Enterprise WiFi, LAN, WAN, cabling, and on-site installations.</p>
-    </div>
-</div>
+</section>
+
+<footer>
+    <p>© 2025 Sughainfotech. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
