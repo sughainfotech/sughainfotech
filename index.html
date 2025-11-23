@@ -1,30 +1,75 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Sughainfotech - IT Solutions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sughainfotech — Modern IT, Nature-aligned</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="Sughainfotech Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="header">
+  <div class="brand">
+    <!-- use the uploaded path below. Replace with 'logo.png' after you upload on GitHub -->
+    <img src="/mnt/data/A_logo_for_a_company_named_Sughainfotech_features_.png" alt="Sughainfotech logo">
+    <div class="title">Sughainfotech</div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a class="cta" href="contact.html">Contact</a>
+  </nav>
+
+  <button class="burger" aria-label="menu" onclick="document.querySelector('.nav').classList.toggle('show')">☰</button>
 </header>
 
-<div class="hero">
-    <h1>Empowering Businesses with Modern IT Solutions</h1>
-    <p>We provide professional IT Services, Web Development, Digital Marketing, Consulting & Infrastructure Support.</p>
-    <a class="btn-primary" href="services.html">Explore Services</a>
-</div>
+<section class="hero">
+  <div class="intro">
+    <h1>Modern IT that respects simplicity — and nature.</h1>
+    <p>We provide managed IT, secure networks, cloud & backup, web solutions, and training — all delivered with a mindful, nature-inspired approach.</p>
+    <div class="hero-cta">
+      <a class="btn" href="contact.html">Get a Free Consultation</a>
+      <a style="margin-left:12px;color:var(--muted);" href="services.html">See Services →</a>
+    </div>
+  </div>
 
-<footer>
-    © 2025 Sughainfotech. All Rights Reserved.
+  <aside class="card-hero">
+    <h3 style="margin-top:0">Quick Snapshot</h3>
+    <p class="small-muted">24/7 monitoring · Secure backups · Local support · Fixed monthly pricing</p>
+    <div style="margin-top:10px">
+      <strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a><br>
+      <strong>Email:</strong> <a href="mailto:info@sughainfotech.com">info@sughainfotech.com</a>
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <h2>Our Core Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Managed IT</h3><p>Proactive monitoring, patching, and SLA-backed support.</p></div>
+    <div class="card"><h3>Network & Security</h3><p>Firewalls, endpoint protection and secure remote access.</p></div>
+    <div class="card"><h3>Cloud & Backup</h3><p>Encrypted backups, tested DR and cloud migrations.</p></div>
+    <div class="card"><h3>Web & Digital</h3><p>Websites, SEO basics, and small digital campaigns.</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="yr"></span> Sughainfotech — IT Solutions & Digital Services • Chennai
 </footer>
 
+<!-- WhatsApp quick link -->
+<a class="whatsapp-float" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Sughainfotech%2C%20I%20need%20help%20with%20IT%20services" target="_blank" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp">
+</a>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // simple nav toggle for mobile
+  document.querySelector('.burger')?.addEventListener('click', ()=> {
+    document.querySelector('.nav').classList.toggle('show');
+  });
+</script>
 </body>
 </html>
