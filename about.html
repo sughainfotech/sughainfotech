@@ -1,35 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>About - Sughainfotech</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Sughainfotech</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <img src="logo.png" alt="Sughainfotech Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="header">
+  <div class="brand">
+    <img src="/mnt/data/A_logo_for_a_company_named_Sughainfotech_features_.png" alt="Sughainfotech logo">
+    <div class="title">Sughainfotech</div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a class="cta" href="contact.html">Contact</a>
+  </nav>
+  <button class="burger" aria-label="menu">☰</button>
 </header>
 
 <section class="section">
-    <h2>About Us</h2>
-    <div class="card">
-        <p>
-            Sughainfotech is a modern IT solutions company delivering reliable,
-            secure and scalable services. We integrate technology with nature-inspired
-            simplicity to create digital experiences that feel smooth and intuitive.
-        </p>
+  <h2>About Sughainfotech</h2>
+
+  <div style="max-width:1100px;margin:20px auto; display:grid; grid-template-columns: 1fr 420px; gap:24px; align-items:start">
+    <div>
+      <div class="card">
+        <h3>Who we are</h3>
+        <p>Sughainfotech is a Chennai-based IT solutions company focused on delivering reliable, secure and user-friendly technology for businesses. Our approach blends technical depth with thoughtful, nature-aligned design.</p>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <h3>Mission</h3>
+        <p>To simplify technology so people and organizations can focus on what matters most.</p>
+      </div>
     </div>
+
+    <aside class="card">
+      <h3>Values</h3>
+      <ul>
+        <li>Customer-first support</li>
+        <li>Transparent pricing</li>
+        <li>Sustainable and responsible tech</li>
+      </ul>
+      <div style="margin-top:12px"><strong>Location:</strong> Chennai, India</div>
+    </aside>
+  </div>
 </section>
 
-<footer>
-    © 2025 Sughainfotech. All Rights Reserved.
-</footer>
-
+<footer class="footer">© <span id="yr2"></span> Sughainfotech</footer>
+<script>document.getElementById('yr2').textContent=new Date().getFullYear();</script>
 </body>
 </html>
