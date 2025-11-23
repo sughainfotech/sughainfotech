@@ -1,62 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Services - Sughainfotech</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Sughainfotech</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <img src="logo.png" alt="Sughainfotech Logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="header">
+  <div class="brand">
+    <img src="/mnt/data/A_logo_for_a_company_named_Sughainfotech_features_.png" alt="Sughainfotech logo">
+    <div class="title">Sughainfotech</div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="services.html">Services</a>
+    <a class="cta" href="contact.html">Contact</a>
+  </nav>
+  <button class="burger" aria-label="menu">☰</button>
 </header>
 
 <section class="section">
-    <h2>Our Services</h2>
+  <h2>Our Services</h2>
 
-    <div class="card-container">
-
-        <div class="card">
-            <h3>IT Services</h3>
-            <p>End-to-end technical support, system management, monitoring & maintenance.</p>
-        </div>
-
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>Professional websites, portals & landing pages with modern UI/UX.</p>
-        </div>
-
-        <div class="card">
-            <h3>Consulting</h3>
-            <p>Expert guidance on IT modernization, cloud migration & infrastructure planning.</p>
-        </div>
-
-        <div class="card">
-            <h3>Networking & Infra Support</h3>
-            <p>LAN/WAN setup, firewall configuration, server deployment & troubleshooting.</p>
-        </div>
-
-        <div class="card">
-            <h3>Digital Marketing</h3>
-            <p>Branding, SEO, social media campaigns & online growth strategies.</p>
-        </div>
-
-        <div class="card">
-            <h3>Training</h3>
-            <p>Workshops & hands-on training for IT technologies & business skills.</p>
-        </div>
-
+  <div class="grid">
+    <div class="card">
+      <h3>Managed IT</h3>
+      <p>24/7 monitoring, patching, remote helpdesk and SLA-based operations.</p>
     </div>
+
+    <div class="card">
+      <h3>Network & Security</h3>
+      <p>Firewall setup, VPN, endpoint protection and vulnerability scanning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cloud & Backup</h3>
+      <p>Cloud migrations, encrypted backups and tested disaster recovery plans.</p>
+    </div>
+
+    <div class="card">
+      <h3>Web & Digital</h3>
+      <p>Websites, WordPress, performance optimization and basic SEO.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>IT strategy, cost optimization and compliance advisory.</p>
+    </div>
+
+    <div class="card">
+      <h3>Training</h3>
+      <p>Staff upskilling, cybersecurity awareness and productivity workshops.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-    © 2025 Sughainfotech. All Rights Reserved.
-</footer>
-
+<footer class="footer">© <span id="yr3"></span> Sughainfotech</footer>
+<script>document.getElementById('yr3').textContent=new Date().getFullYear();</script>
 </body>
 </html>
