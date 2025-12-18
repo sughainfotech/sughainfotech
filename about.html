@@ -6,50 +6,50 @@
   <title>About — Sughainfotech</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="header">
   <div class="brand">
-    <img src="/mnt/data/A_logo_for_a_company_named_Sughainfotech_features_.png" alt="Sughainfotech logo">
-    <div class="title">Sughainfotech</div>
+    <img src="logo.png">
+    <div class="name">Sughainfotech</div>
   </div>
+
   <nav class="nav">
     <a href="index.html">Home</a>
     <a class="active" href="about.html">About</a>
     <a href="services.html">Services</a>
     <a class="cta" href="contact.html">Contact</a>
   </nav>
-  <button class="burger" aria-label="menu">☰</button>
 </header>
 
 <section class="section">
   <h2>About Sughainfotech</h2>
 
-  <div style="max-width:1100px;margin:20px auto; display:grid; grid-template-columns: 1fr 420px; gap:24px; align-items:start">
-    <div>
-      <div class="card">
-        <h3>Who we are</h3>
-        <p>Sughainfotech is a Chennai-based IT solutions company focused on delivering reliable, secure and user-friendly technology for businesses. Our approach blends technical depth with thoughtful, nature-aligned design.</p>
-      </div>
+  <div class="card">
+    <p>Sughainfotech is a Chennai-based IT solutions provider offering managed services, network security, cloud backup solutions, and modern web development. Our goal is to simplify technology for businesses while maintaining high standards of reliability and performance.</p>
+  </div>
 
-      <div class="card" style="margin-top:18px">
-        <h3>Mission</h3>
-        <p>To simplify technology so people and organizations can focus on what matters most.</p>
-      </div>
+  <br>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To deliver secure, scalable, and customer-focused IT solutions with complete transparency.</p>
     </div>
 
-    <aside class="card">
-      <h3>Values</h3>
-      <ul>
-        <li>Customer-first support</li>
-        <li>Transparent pricing</li>
-        <li>Sustainable and responsible tech</li>
-      </ul>
-      <div style="margin-top:12px"><strong>Location:</strong> Chennai, India</div>
-    </aside>
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>Efficiency, commitment, transparency, and long-term client relationships.</p>
+    </div>
   </div>
 </section>
 
-<footer class="footer">© <span id="yr2"></span> Sughainfotech</footer>
-<script>document.getElementById('yr2').textContent=new Date().getFullYear();</script>
+<footer class="footer">
+  © <span id="year2"></span> Sughainfotech
+</footer>
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
