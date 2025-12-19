@@ -46,6 +46,11 @@ body{
   gap:12px;
 }
 
+@media(max-width:768px){
+  .brand img{
+    height:52px;
+  }
+
 .brand img{
   height:75px;
   width:auto;
@@ -183,5 +188,6 @@ body{
   margin-top:40px;
   color:var(--muted);
 }
+
 
 
