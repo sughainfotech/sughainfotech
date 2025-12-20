@@ -11,7 +11,7 @@
 
 <header class="header">
   <div class="brand">
-    <img src="logo.png">
+    <img src="logo.png" alt="Sughainfotech Logo">
     <div class="name">Sughainfotech</div>
   </div>
 
@@ -26,30 +26,55 @@
 <section class="section">
   <h2>Contact Us</h2>
 
+  <div class="card">
+    <p>
+      Looking to understand your cloud setup better?
+      <br><br>
+      We offer a <strong>Free Cloud & Infrastructure Assessment</strong>
+      to help you identify cost inefficiencies, stability risks,
+      and improvement opportunities.
+      <br><br>
+      There is no obligation — just a practical discussion
+      to give you clarity on your current environment.
+    </p>
+  </div>
+
+  <br>
+
   <div class="card form">
 
+    <h3>Book Your Free Cloud Assessment</h3>
+
     <form action="https://formspree.io/f/xvgljdkw" method="POST">
+
       <label>Your Name</label>
       <input class="input" type="text" name="name" required>
 
       <label>Your Email</label>
       <input class="input" type="email" name="email" required>
 
-      <label>Your Message</label>
-      <textarea class="input" name="message" rows="6" required></textarea>
+      <label>Briefly describe your setup or concern (optional)</label>
+      <textarea class="input" name="message" rows="5"></textarea>
 
-      <button class="btn" type="submit">Send Message</button>
+      <button class="btn" type="submit">Request Free Assessment</button>
+
     </form>
+
+    <p style="margin-top:15px; font-size:14px; color:#6b7280;">
+      We typically respond within 24 hours.
+    </p>
 
   </div>
 
 </section>
 
 <footer class="footer">
-  © <span id="year4"></span> Sughainfotech • info@sughainfotech.com
+  © <span id="year"></span> Sughainfotech • info@sughainfotech.com
 </footer>
 
-<script>document.getElementById('year4').textContent=new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
